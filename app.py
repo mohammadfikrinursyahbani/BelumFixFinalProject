@@ -35,7 +35,7 @@ def app():
     insulin = st.number_input('Insulin', min_value=0, max_value=846, value=0)
     bmi = st.number_input('BMI', min_value=0.0, max_value=67.1, value=0.0)
     diabetes_pedigree_function = st.number_input('Diabetes Pedigree Function', min_value=0.0, max_value=2.42, value=0.0)
-    age = st.number_input('Age', min_value=21, max_value=81, value=0)
+    age = st.number_input('Age', min_value=0, max_value=81, value=0)
 
     # Check if any input field is empty
     if glucose == 0 or blood_pressure == 0 or skin_thickness == 0 or insulin == 0 or bmi == 0.0 or diabetes_pedigree_function == 0.0 or age == 0:
