@@ -43,10 +43,10 @@ def app():
     else:# Check if any input field is empty
         if st.button('Predict'):
             result = predict_diabetes(pregnancies, glucose, blood_pressure, skin_thickness, insulin, bmi, diabetes_pedigree_function, age)
-            if result == 0:
-                st.write('You do not have diabetes.')
-            else:
+            if result == 1:
                 st.write('You have diabetes.')
+            else:
+                st.write('You do not have diabetes.')
 
 if __name__ == '__main__':
     app()
