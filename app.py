@@ -33,7 +33,7 @@ def app():
     blood_pressure = st.number_input('Blood Pressure', min_value=0, max_value=122, value=0)
     skin_thickness = st.number_input('Skin Thickness', min_value=0, max_value=99, value=0)
     insulin = st.number_input('Insulin', min_value=0, max_value=846, value=0)
-    bmi = st.number_input('BMI', min_value=0.0, max_value=67.1, value=0)
+    bmi = st.number_input('BMI', min_value=0.0, max_value=67.1, value=0.0)
     diabetes_pedigree_function = st.number_input('Diabetes Pedigree Function', min_value=0.078, max_value=2.42, value=0.708)
     age = st.number_input('Age', min_value=21, max_value=81, value=0)
 
