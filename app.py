@@ -29,13 +29,13 @@ def app():
 
     # Create input fields for the user to enter the details
     pregnancies = st.number_input('Pregnancies', min_value=0, max_value=17, step=1, value=0)
-    glucose = st.number_input('Glucose', min_value=0, max_value=199, value=70)
-    blood_pressure = st.number_input('Blood Pressure', min_value=0, max_value=122, value=70)
-    skin_thickness = st.number_input('Skin Thickness', min_value=0, max_value=99, value=20)
-    insulin = st.number_input('Insulin', min_value=0, max_value=846, value=79)
-    bmi = st.number_input('BMI', min_value=0.0, max_value=67.1, value=20.0)
-    diabetes_pedigree_function = st.number_input('Diabetes Pedigree Function', min_value=0.078, max_value=2.42, value=0.3725)
-    age = st.number_input('Age', min_value=21, max_value=81, value=33)
+    glucose = st.number_input('Glucose', min_value=0, max_value=199, value=0)
+    blood_pressure = st.number_input('Blood Pressure', min_value=0, max_value=122, value=0)
+    skin_thickness = st.number_input('Skin Thickness', min_value=0, max_value=99, value=0)
+    insulin = st.number_input('Insulin', min_value=0, max_value=846, value=0)
+    bmi = st.number_input('BMI', min_value=0.0, max_value=67.1, value=0)
+    diabetes_pedigree_function = st.number_input('Diabetes Pedigree Function', min_value=0.078, max_value=2.42, value=0)
+    age = st.number_input('Age', min_value=21, max_value=81, value=0)
 
     # Check if any input field is empty
     if glucose == 0 or blood_pressure == 0 or skin_thickness == 0 or insulin == 0 or bmi == 0.0 or diabetes_pedigree_function == 0.0 or age == 0:
