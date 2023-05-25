@@ -15,6 +15,9 @@ Model machine learning dan deployment nya dapat diakses di :
 
 ## Data Preprocessing
 1. Imputation dilakukan menggunakan mean untuk data yang terdistribusi hampir normal (data glucose, blood pressure) dan median untuk data yang skewed (data skin thickness, bmi, insulin).
+2. SMOTE dilakukan untuk meningkatkan jumlah sampel minoritas pada pelatihan.
+3. StandardScaler untuk memastikan setiap fitur berkontribusi secara seimbang dalam pembelajaran model dan menghindari bias yang disebabkan oleh perbedaan skala.
+
 
 
 ## Table Model
@@ -41,4 +44,8 @@ Model machine learning dan deployment nya dapat diakses di :
 
 
 ## Kesimpulan
+1. Glukosa, Usia, dan BMI adalah faktor-faktor paling penting dalam mengidentifikasi orang yang berisiko terkena diabetes. Nilai variabel-variabel lainnya tidak signifikan.
+2. Didapatkan profil untuk wanita sebagai berikut:
+- Wanita dengan Risiko Rendah: Kadar Glukosa <= 127, Usia <= 28.
+- Wanita dengan Risiko Tinggi: Kadar Glukosa > 100, Usia > 28, atau BMI > 28.5.
 
