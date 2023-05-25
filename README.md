@@ -19,6 +19,7 @@ Model machine learning dan deployment nya dapat diakses di :
 
 ## Table Model
 | Model Machine Learning | Split Data | Train Accuracy | Test Accuracy | Precision | Recall | F-1 Score |
+| --- | --- | --- | --- | --- | --- | --- |
 | Logistic Regression | 80 : 20 | 78.2% | 75.3% | 75% | 77% | 75% |
 | XGBoost | 80 : 20 | 90.9% | 85.1% | 84% | 85% | 84% |
 | Support Vector Classifier | 80 : 20 | 83.4% |	79.9% |	79% |	81% |	79% |
